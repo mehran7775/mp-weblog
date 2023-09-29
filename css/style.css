@@ -9,6 +9,8 @@ body {
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  direction: rtl;
+  text-align: right;
 }
 
 ol, ul {
@@ -227,7 +229,7 @@ p {
   position: relative;
   height: 48px;
   width: 48px;
-  float: left;
+  float: right;
   margin-top: 14px;
   margin-bottom: 20px;
 }
@@ -237,7 +239,7 @@ p {
 }
 
 .icon-text {
-  margin-left: 73px;
+  margin-right: 73px;
   padding: 0px 25px 25px 0px;
 }
 
@@ -287,6 +289,11 @@ h3.txt-tl {
 
 .portfolio-box {
   margin-bottom: 15px;
+}
+
+.portfolio-box img {
+  max-height: 178px;
+  width: 100%;
 }
 
 .padding-right-zero {
@@ -372,10 +379,10 @@ a, a:hover {
 
 .contact-icon-container {
   position: absolute;
-  top: -38px;
-  right: 0;
+  top: -44px;
+  right: -8px;
   padding-right: 20px;
-  font-size: 320px;
+  font-size: 150px;
   color: #555;
   line-height: 300px;
   -ms-transform: rotate(20deg);
@@ -383,6 +390,7 @@ a, a:hover {
   -webkit-transform: rotate(20deg);
   transform: rotate(20deg);
 }
+
 
 /****/
 
@@ -397,13 +405,10 @@ a, a:hover {
   text-align: left;
 }
 
-.footer-social {
-  float: right;
-}
-
 .footer-social a {
-  font-size: 18px;
+  font-size: 24px;
   color: #666;
+  margin: auto 5px;
 }
 
 .link-dec, .link-dec:hover {
